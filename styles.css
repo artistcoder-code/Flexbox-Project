@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Variables */
+
+:root {
+    --ff-primary: 'Playfair Display', serif;
+    --ff-secondary: 'Roboto', sans-serif;
+    
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --fs-h1: 3.75rem;
+    --fs-h2: 2.25rem;
+
+    --clr-light: #F3EED9;
+    --clr-dark: #222C2A;
+    --clr-brown: #824936; 
+}
+
+/* General */
+
+body {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* First part of the page - BEIGE*/
+
+.container {
+    width: 80%;
+    max-width: 1128px;
+
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--clr-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 660px;
+   
+}
+
+.header__text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.header__paraghraph {
+    font-family: var(--ff-secondary);
+    font-size: 1.125rem;
+    font-weight: var(--fw-reg);
+    text-transform: uppercase;
+    line-height: 0.1;
+    letter-spacing: 7px;
+    
+}
+
+.header__title {
+    font-size: var(--fs-h1);
+    color: var(--clr-brown);
+    margin-top: 0;
+    
+}
+
+/* Second part of the page - WHITE */
+
+.section_text {
+    padding: 3em 0;
+}
+
+.section__text--title h2 {
+    text-align: center;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h2);
+    color: var(--clr-brown);
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    text-align: center;
+    margin-left: 3em;
+    width: 100%;
+}
+
+.col + .col {
+    margin-left: 3em;
+}
+
+.section__text--paragraph {
+    color: #222C2A;
+    font-size: 1.3rem;
+    font-weight: var(--fw-reg);
+    line-height: 1.4;
+}
+
+
+/* Third part of the page - BLACK*/
+
+.section_black {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    padding: 3.125em;
+    justify-content: space-around;
+}
+
+.section__black--text {
+    width: 50%;
+}
+
+.section__black--text--h2 {
+    margin-right: 2em;
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-reg);
+    font-size: var(--fs-h2);
+    
+}
+.section__black--text--p {
+    margin-right: 3em;
+    font-size: 1.3rem;
+    font-weight: var(--fw-reg);
+    line-height: 1.4;
+}
+
+
+/* Fourth part of the page - BROWN*/
+
+.section_brown {
+    background-color: var(--clr-brown);
+    color: var(--clr-light);
+    padding: 3.125em;
+    justify-content: space-around;
+}
+
+.section__brown--text {
+    width: 50%;
+}
+
+.section__brown--text--h2 {
+    margin-left: 1.6em;
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-reg);
+    font-size: var(--fs-h2);
+}
+
+.section__brown--text--p {
+    margin-left: 3em;
+    font-size: 1.3rem;
+    font-weight: var(--fw-reg);
+    line-height: 1.4;
+}
